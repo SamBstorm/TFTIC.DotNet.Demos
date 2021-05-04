@@ -7,6 +7,7 @@ namespace TFTIC.DotNet.Exos.Delegate
         static void Main(string[] args)
         {
             Robot r = new Robot();
+            r.MouvementEnded += Console.WriteLine;
             r.AddMouvement(Robot.Movement.Avancer);
             r.AddMouvement(Robot.Movement.Gauche, Robot.Movement.Avancer, Robot.Movement.Droite);
             r.StartMouvement();

@@ -14,6 +14,8 @@ namespace TFTIC.DotNet.Exos.Delegate
         private int _direction_angle;
         private Action _mr;
 
+        public event Action<string> MouvementEnded;
+
         private Direction Direction
         {
             get
@@ -62,17 +64,20 @@ namespace TFTIC.DotNet.Exos.Delegate
                     Position_X += 1;
                     break;
             }
-            Console.WriteLine(this);
+            //Console.WriteLine(this);
+            OnMouvementEnded();
         }
         private void TournerGauche()
         {
             _direction_angle -= 90;
-            Console.WriteLine(this);
+            //Console.WriteLine(this);
+            OnMouvementEnded();
         }
         private void TournerDroite()
         {
             _direction_angle += 90;
-            Console.WriteLine(this);
+            //Console.WriteLine(this);
+            OnMouvementEnded();
         }
 
         public void AddMouvement(Movement action)
@@ -115,13 +120,18 @@ namespace TFTIC.DotNet.Exos.Delegate
 
         public void StartMouvement()
         {
-            _mr();
+            _mr?.Invoke();
         }
 
         //virtual string ToString() => Return NomNameSpace.NomObject //TFTIC.DotNet.Exos.Delegate.Robot
         public override string ToString()
         {
             return $"Pos X: {this.Position_X} - Y : {this.Position_Y} | Direction : {this.Direction}";
+        }
+
+        protected virtual void OnMouvementEnded()
+        {
+            MouvementEnded?.Invoke(ToString());
         }
     }
 }
