@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TFTIC.DotNet.Exos.Delegate
 {
-    public delegate void MouvementRobot();
+    //public delegate void MouvementRobot();
     public enum Direction { Haut, Droite, Bas, Gauche }
     public class Robot
     {
@@ -12,7 +12,7 @@ namespace TFTIC.DotNet.Exos.Delegate
         private int Position_X;
         private int Position_Y;
         private int _direction_angle;
-        private MouvementRobot _mr;
+        private Action _mr;
 
         private Direction Direction
         {

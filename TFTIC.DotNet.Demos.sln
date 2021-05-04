@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFTIC.DotNet.Demos.Delegate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFTIC.DotNet.Exos.Delegate", "TFTIC.DotNet.Exos.Delegate\TFTIC.DotNet.Exos.Delegate.csproj", "{B6F32643-9C3F-4364-96A7-F7C8B04DCCD0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFTIC.DotNet.Demos.DelegatesGeneric", "TFTIC.DotNet.Demos.DelegatesGeneric\TFTIC.DotNet.Demos.DelegatesGeneric.csproj", "{121B5864-2646-4EE3-9B96-A163D79888D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TFTIC.DotNet.Demos.Events", "TFTIC.DotNet.Demos.Events\TFTIC.DotNet.Demos.Events.csproj", "{7AD329C7-C605-459A-95B5-2D169C332CA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B6F32643-9C3F-4364-96A7-F7C8B04DCCD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6F32643-9C3F-4364-96A7-F7C8B04DCCD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6F32643-9C3F-4364-96A7-F7C8B04DCCD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{121B5864-2646-4EE3-9B96-A163D79888D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{121B5864-2646-4EE3-9B96-A163D79888D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{121B5864-2646-4EE3-9B96-A163D79888D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{121B5864-2646-4EE3-9B96-A163D79888D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD329C7-C605-459A-95B5-2D169C332CA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD329C7-C605-459A-95B5-2D169C332CA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD329C7-C605-459A-95B5-2D169C332CA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD329C7-C605-459A-95B5-2D169C332CA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
